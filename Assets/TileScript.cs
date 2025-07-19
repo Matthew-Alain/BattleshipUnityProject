@@ -7,40 +7,52 @@ public class TileScript : MonoBehaviour
 {
     private Camera mainCamera;
     private SpriteRenderer spriteRenderer;
-    private Color originalColor;
     public bool hasShip = false; //Set this to private when enemy placing is automated
     private bool shot = false;
-    public static int maxShips = 5;
-    public static int shipsPlaced = 0;
-    public static int enemyShips = maxShips;
     private new string tag;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        originalColor = spriteRenderer.color;
         mainCamera = Camera.main;
         tag = gameObject.tag;
+        //if (GameManager.Instance.CurrentState == GameState.PlaceShipsNew)
+        //{
+        //    hasShip = true;
+        //    tag = "PlayerSpaces";
+        //}
     }
 
     void Update()
     {
-        // Check for left mouse click or screen tap
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        // Handle mouse input
+        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
         {
-            Vector2 mousePos = Mouse.current.position.ReadValue();
-            Vector2 worldPos = mainCamera.ScreenToWorldPoint(mousePos);
-            RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);
-            if (hit.collider != null && hit.collider.gameObject == gameObject)
+            HandleClick(Mouse.current.position.ReadValue());
+        }
+
+        // Handle touch input (only on devices with touchscreen)
+        if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
+        {
+            HandleClick(Touchscreen.current.primaryTouch.position.ReadValue());
+        }
+    }
+
+    private void HandleClick(Vector2 screenPos)
+    {
+        Vector2 worldPos = mainCamera.ScreenToWorldPoint(screenPos);
+        RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);
+
+        if (hit.collider != null && hit.collider.gameObject == gameObject)
+        {
+            switch (GameManager.Instance.CurrentState)
             {
-                if (GameManager.Instance.CurrentState == GameState.PlaceShips)
-                {
+                case GameState.PlaceShips:
                     placeShip();
-                }
-                else if (GameManager.Instance.CurrentState == GameState.ShootShips)
-                {
+                    break;
+                case GameState.ShootShips:
                     shootShip();
-                }
+                    break;
             }
         }
     }
@@ -61,11 +73,11 @@ public class TileScript : MonoBehaviour
             UITextHandler.Instance.SetText("PlaceSameSpace");
         }else if(tag == "PlayerSpaces" && !hasShip)
         {
-            shipsPlaced++;
+            GameManager.shipsPlaced++;
             UITextHandler.Instance.SetText("PlacedShip");
             hasShip = true;
             setColor(Color.green);
-            if (shipsPlaced >= maxShips)
+            if (GameManager.shipsPlaced >= GameManager.maxShips)
             {
                 GameManager.Instance.SetGameState(GameState.ShootShips);
             }
@@ -94,8 +106,8 @@ public class TileScript : MonoBehaviour
             {
                 setColor(Color.red);
                 Debug.Log("Hit");
-                enemyShips--;
-                if (enemyShips <= 0)
+                GameManager.enemyShips--;
+                if (GameManager.enemyShips <= 0)
                 {
                     GameManager.Instance.SetGameState(GameState.Victory);
                     Debug.Log("You win!");

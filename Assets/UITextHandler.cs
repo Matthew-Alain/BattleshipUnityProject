@@ -26,7 +26,7 @@ public class UITextHandler : MonoBehaviour
                         text("Welcome! Click \"Start Game\" to start!");
                         break;
                     case GameState.PlaceShips:
-                        text("Place your ships! Remaining ships: "+(TileScript.maxShips - TileScript.shipsPlaced).ToString());
+                        text("Place your ships! Remaining ships: "+(GameManager.maxShips - GameManager.shipsPlaced).ToString());
                         break;
                     case GameState.ShootShips:
                         text("Select the enemy space you would like to shoot!");
@@ -42,13 +42,13 @@ public class UITextHandler : MonoBehaviour
                 }
                 break;
             case "PlacedShip":
-                text("Place your ships! Remaining ships: "+(TileScript.maxShips - TileScript.shipsPlaced).ToString());
+                text("Place your ships! Remaining ships: "+(GameManager.maxShips - GameManager.shipsPlaced).ToString());
                 break;
             case "PlaceWrongSide":
-                text("You can only place ships on your side. Remaining ships: "+(TileScript.maxShips - TileScript.shipsPlaced).ToString());
+                text("You can only place ships on your side. Remaining ships: "+(GameManager.maxShips - GameManager.shipsPlaced).ToString());
                 break;
             case "PlaceSameSpace":
-                text("That space is too close to an existing ship. Remaining ships: "+(TileScript.maxShips - TileScript.shipsPlaced).ToString());
+                text("That space is too close to an existing ship. Remaining ships: "+(GameManager.maxShips - GameManager.shipsPlaced).ToString());
                 break;
             case "ShootWrongSide":
                 text("You can only shoot ships on the enemy side. Select the enemy space you would like to shoot!");
