@@ -1304,7 +1304,7 @@ GameObject:
   - component: {fileID: 749214986}
   m_Layer: 0
   m_Name: PlayerTiles
-  m_TagString: Untagged
+  m_TagString: PlayerSpaces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2238,6 +2238,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed78a7489058e09458833561da3ed533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ai: {fileID: 0}
+  totalPlayerShipsPlaced: 0
+  playerShipsRemaining: 5
+  enemyShipsRemaining: 5
+  aiHasTakenFirstTurn: 0
+  aiInitialDelay: 2
 --- !u!4 &1206847977
 Transform:
   m_ObjectHideFlags: 0
