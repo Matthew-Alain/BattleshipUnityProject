@@ -6,16 +6,21 @@ public class UIButtonHandler : MonoBehaviour
     {
         if (GameManager.Instance.CurrentState == GameState.MainMenu)
         {
+            // Start game button
             GameManager.Instance.SetGameState(GameState.PlaceShips);
             gameObject.SetActive(false);
         }
-        else if (GameManager.Instance.CurrentState == GameState.PlaceShips)
+        else if (GameManager.Instance.CurrentState == GameState.Victory || 
+                GameManager.Instance.CurrentState == GameState.Defeat)
         {
-            GameManager.Instance.SetGameState(GameState.ShootShips);
+            // Restart game button
+            UnityEngine.SceneManagement.SceneManager.LoadScene(
+                UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
         }
-        else if (GameManager.Instance.CurrentState == GameState.ShootShips)
-        {
-            GameManager.Instance.SetGameState(GameState.PlaceShips);
-        }
+        /* 
+         * We no longer need manual state toggling since:
+         * - Ship placement completion is handled in TileScript
+         * - Game flow is automatic after placement
+         */
     }
 }

@@ -1,69 +1,77 @@
 using TMPro;
 using UnityEngine;
 
+// Handles all UI text updates in the game
 public class UITextHandler : MonoBehaviour
 {
+    // Singleton instance for easy access from other scripts
     public static UITextHandler Instance { get; private set; }
+
+    // Reference to the TextMeshPro component
     private TextMeshProUGUI tmp;
 
+    // Set up singleton pattern when object awakens
     void Awake()
     {
         Instance = this;
     }
 
+    // Get reference to text component when game starts
     void Start()
     {
         tmp = GetComponent<TextMeshProUGUI>();
     }
+
+    // Updates UI text based on the provided message key
     public void SetText(string newText)
     {
         switch (newText)
         {
             case "State":
-                switch (GameManager.Instance.CurrentState)
-                {
-                    case GameState.MainMenu:
-                        text("Welcome! Click \"Start Game\" to start!");
-                        break;
-                    case GameState.PlaceShips:
-                        text("Place your ships! Remaining ships: "+(GameManager.maxShips - GameManager.shipsPlaced).ToString());
-                        break;
-                    case GameState.ShootShips:
-                        text("Select the enemy space you would like to shoot!");
-                        break;
-                    case GameState.Victory:
-                        text("You sunk all of the enemy ships, you win!");
-                        break;
-                    case GameState.Defeat:
-                        text("The enemy sunk all of your ships, you lose...");
-                        break;
-                    default:
-                        break;
-                }
+                UpdateStateText(); // Special case - updates based on game state
                 break;
             case "PlacedShip":
-                text("Place your ships! Remaining ships: "+(GameManager.maxShips - GameManager.shipsPlaced).ToString());
+                tmp.text = $"Ships placed: {GameManager.Instance.totalPlayerShipsPlaced}/{GameManager.MAX_SHIPS}";
                 break;
             case "PlaceWrongSide":
-                text("You can only place ships on your side. Remaining ships: "+(GameManager.maxShips - GameManager.shipsPlaced).ToString());
+                tmp.text = $"Place on your side only! Ships placed: {GameManager.Instance.totalPlayerShipsPlaced}/{GameManager.MAX_SHIPS}";
                 break;
             case "PlaceSameSpace":
-                text("That space is too close to an existing ship. Remaining ships: "+(GameManager.maxShips - GameManager.shipsPlaced).ToString());
+                tmp.text = $"Space occupied! Ships placed: {GameManager.Instance.totalPlayerShipsPlaced}/{GameManager.MAX_SHIPS}";
                 break;
             case "ShootWrongSide":
-                text("You can only shoot ships on the enemy side. Select the enemy space you would like to shoot!");
+                tmp.text = "Aim for enemy waters!";
                 break;
             case "ShootSameSpace":
-                text("You already shot that space, try somewhere else. Select the enemy space you would like to shoot!");
+                tmp.text = "You already shot here!";
                 break;
-            default:
+            case "Hit":
+                tmp.text = "Direct hit! Shoot again!";
                 break;
+                // Note: No default case needed since we want silent failure
         }
-
     }
 
-    private void text(string newText)
+    // Updates text based on current game state
+    private void UpdateStateText()
     {
-        tmp.text = newText;
+        switch (GameManager.Instance.CurrentState)
+        {
+            case GameState.MainMenu:
+                tmp.text = "Welcome! Click 'Start Game' to begin!";
+                break;
+            case GameState.PlaceShips:
+                tmp.text = $"Place your ships ({GameManager.Instance.totalPlayerShipsPlaced}/{GameManager.MAX_SHIPS})";
+                break;
+            case GameState.ShootShips:
+                tmp.text = "Attack enemy waters!";
+                break;
+            case GameState.Victory:
+                tmp.text = "Victory! All enemy ships sunk!";
+                break;
+            case GameState.Defeat:
+                tmp.text = "Defeat! Your fleet was destroyed!";
+                break;
+        }
     }
 }
