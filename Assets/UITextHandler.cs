@@ -10,6 +10,9 @@ public class UITextHandler : MonoBehaviour
     // Reference to the TextMeshPro component
     private TextMeshProUGUI tmp;
 
+    // Current active temporary message
+    private string currentTemporaryMessage = null;
+
     // Set up singleton pattern when object awakens
     void Awake()
     {
@@ -28,27 +31,56 @@ public class UITextHandler : MonoBehaviour
         switch (newText)
         {
             case "State":
-                UpdateStateText(); // Special case - updates based on game state
+                UpdateStateText();
+                currentTemporaryMessage = null;
                 break;
-            case "PlacedShip":
-                tmp.text = $"Ships placed: {GameManager.Instance.totalPlayerShipsPlaced}/{GameManager.MAX_SHIPS}";
+            default:
+                // Store temporary message until next state change
+                currentTemporaryMessage = newText;
+                UpdateDisplay();
                 break;
-            case "PlaceWrongSide":
-                tmp.text = $"Place on your side only! Ships placed: {GameManager.Instance.totalPlayerShipsPlaced}/{GameManager.MAX_SHIPS}";
-                break;
-            case "PlaceSameSpace":
-                tmp.text = $"Space occupied! Ships placed: {GameManager.Instance.totalPlayerShipsPlaced}/{GameManager.MAX_SHIPS}";
-                break;
-            case "ShootWrongSide":
-                tmp.text = "Aim for enemy waters!";
-                break;
-            case "ShootSameSpace":
-                tmp.text = "You already shot here!";
-                break;
-            case "Hit":
-                tmp.text = "Direct hit! Shoot again!";
-                break;
-                // Note: No default case needed since we want silent failure
+        }
+    }
+
+    // Updates display based on current message
+    private void UpdateDisplay()
+    {
+        if (currentTemporaryMessage != null)
+        {
+            switch (currentTemporaryMessage)
+            {
+                case "PlacedShip":
+                    tmp.text = $"Ship placed! ({GameManager.Instance.totalPlayerShipsPlaced}/{GameManager.MAX_SHIPS})";
+                    break;
+                case "PlaceWrongSide":
+                    tmp.text = $"Place on your side only! ({GameManager.Instance.totalPlayerShipsPlaced}/{GameManager.MAX_SHIPS})";
+                    break;
+                case "PlaceSameSpace":
+                    tmp.text = $"Space occupied! ({GameManager.Instance.totalPlayerShipsPlaced}/{GameManager.MAX_SHIPS})";
+                    break;
+                case "ShootWrongSide":
+                    tmp.text = "Aim for enemy waters!";
+                    break;
+                case "ShootSameSpace":
+                    tmp.text = "You already shot here!";
+                    break;
+                case "Miss":
+                    tmp.text = "Miss! Enemy's turn...";
+                    break;
+                case "Hit":
+                    tmp.text = "Direct hit! Shoot again!";
+                    break;
+                case "EnemyMiss":
+                    tmp.text = "Enemy Misses! Your turn...";
+                    break;
+                case "EnemyHit":
+                    tmp.text = "Enemy hit your ship! Another shot is incoming!";
+                    break;
+            }
+        }
+        else
+        {
+            UpdateStateText();
         }
     }
 

@@ -57,10 +57,12 @@ public class SimpleBattleshipAI : MonoBehaviour
         if (hit && GameManager.Instance.playerShipsRemaining > 0 &&
         GameManager.Instance.CurrentState == GameState.ShootShips)
         {
+            UITextHandler.Instance.SetText("EnemyHit");
             Invoke(nameof(TakeTurn), 1.5f); // Chain consecutive hits
         }
         else
         {
+            UITextHandler.Instance.SetText("EnemyMiss");
             GameManager.Instance.IsAITurn = false; // Turn ends when AI misses
         }
     }

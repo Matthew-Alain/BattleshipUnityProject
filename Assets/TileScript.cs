@@ -22,6 +22,7 @@ public class TileScript : MonoBehaviour
     {
         // Get component references and initial values
         spriteRenderer = GetComponent<SpriteRenderer>();
+        originalColor = spriteRenderer.color;
         mainCamera = Camera.main;
         tileTag = gameObject.tag;
 
@@ -54,13 +55,13 @@ public class TileScript : MonoBehaviour
         }
 
         // Handle mouse input
-        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+        if (Mouse.current?.leftButton.wasPressedThisFrame ?? false)
         {
             HandleClick(Mouse.current.position.ReadValue());
         }
 
         // Handle touch input (only on devices with touchscreen)
-        if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
+        if (Touchscreen.current?.primaryTouch.press.wasPressedThisFrame ?? false)
         {
             HandleClick(Touchscreen.current.primaryTouch.position.ReadValue());
         }
@@ -86,7 +87,6 @@ public class TileScript : MonoBehaviour
             }
         }
     }
-    
 
     // Shows/hides enemy ships (magenta color) when called
     public void ToggleEnemyShips(bool show)
@@ -147,14 +147,14 @@ public class TileScript : MonoBehaviour
         // Prevent shooting own ships
         if (tileTag != "EnemySpaces")
         {
-            UITextHandler.Instance.SetText("Aim for enemy waters!");
+            UITextHandler.Instance.SetText("ShootWrongSide");
             return;
         }
 
         // Prevent shooting same tile twice
         if (shot)
         {
-            UITextHandler.Instance.SetText("Already shot here!");
+            UITextHandler.Instance.SetText("ShootSameSpace");
             return;
         }
 
@@ -164,8 +164,8 @@ public class TileScript : MonoBehaviour
         {
             SetColor(Color.red);
             GameManager.Instance.enemyShipsRemaining--;
-            UITextHandler.Instance.SetText("Direct hit!");
-
+            UITextHandler.Instance.SetText("Hit"); 
+            
             // Check for victory
             if (GameManager.Instance.enemyShipsRemaining <= 0)
             {
@@ -175,7 +175,7 @@ public class TileScript : MonoBehaviour
         else // Miss
         {
             SetColor(Color.gray);
-            UITextHandler.Instance.SetText("Miss! Enemy's turn...");
+            UITextHandler.Instance.SetText("Miss");
             StartAITurn(1.5f); // Give AI turn after delay
         }
     }
@@ -192,5 +192,7 @@ public class TileScript : MonoBehaviour
     {
         GameManager.Instance.ai.TakeTurn();
         isAITurn = false;
+        
+        // If AI hit a ship, this will be handled in SimpleBattleshipAI.cs
     }
 }
