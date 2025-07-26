@@ -360,8 +360,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc5dfa68170113b4b9af5401323aeff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spacePrefab: {fileID: 5855414458777580869, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
-  mainCamera: {fileID: 0}
 --- !u!4 &179738086
 Transform:
   m_ObjectHideFlags: 0
@@ -1017,7 +1015,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5.6229324
+  orthographic size: 5.5423884
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2302,6 +2300,8 @@ MonoBehaviour:
   enemyShipsRemaining: 5
   ai: {fileID: 0}
   aiInitialDelay: 2
+  playerTiles: []
+  enemyTiles: []
 --- !u!4 &1206847977
 Transform:
   m_ObjectHideFlags: 0
@@ -4704,7 +4704,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000030517578, y: 0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0.000030517578}
   m_SizeDelta: {x: -0.00012207031, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &2142755903 stripped

@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.7490196}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -147,4 +147,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1bbcaadd9a4a54bb243e47a4c2c62b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickedColor: {r: 1, g: 0, b: 0, a: 1}
+  originalColor: {r: 0, g: 0, b: 0, a: 0}
+  hasShip: 0
+  shot: 0
+  id: 0
+  missSplashEffect: {fileID: 1614084111613101768, guid: 366076d227b0c224da38e8e43c5382e4, type: 3}
+  hitSplashEffect: {fileID: 1614084111613101768, guid: 4d193308f1ed5f9438e932982fa5eaea, type: 3}
+  shipPiecePrefab: {fileID: 5830646106359935639, guid: 0b32aad38d030af439d0b2d0c777e750, type: 3}
+  hitShipPiecePrefab: {fileID: 5830646106359935639, guid: d87f0261d89c70343af50457c06f86c0, type: 3}
