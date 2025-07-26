@@ -13,6 +13,7 @@ public class TileScript : MonoBehaviour
     public bool shot = false;    // True if this tile has been shot at
     private string tileTag;      // Stores whether this is "PlayerSpaces" or "EnemySpaces"
     private bool showingEnemyShips = false; // Tracks enemy ship visibility state
+    public int id;
 
     void Start()
     {
@@ -21,6 +22,16 @@ public class TileScript : MonoBehaviour
         originalColor = spriteRenderer.color;
         mainCamera = Camera.main;
         tileTag = gameObject.tag;
+        if (tileTag == "PlayerSpaces")
+        {
+            id = GameManager.Instance.playerTiles.Count;
+            GameManager.Instance.playerTiles.Add(this);
+        }
+        else
+        {
+            id = GameManager.Instance.enemyTiles.Count;
+            GameManager.Instance.enemyTiles.Add(this);
+        }
 
         // Debug position logging for setup verification
         Debug.Log($"{gameObject.name} at position {transform.position} with tag {tileTag}");
@@ -72,15 +83,26 @@ public class TileScript : MonoBehaviour
         // Check if this tile was clicked
         if (hit.collider != null && hit.collider.gameObject == gameObject)
         {
-            if (GameManager.Instance.CurrentState == GameState.PlaceShips)
-            {
-                Debug.Log("Placed ship");
-                PlaceShip();
-            }
-            else if (GameManager.Instance.CurrentState == GameState.ShootShips && !GameManager.Instance.IsAITurn)
-            {
-                ShootShip();
-            }
+            GetClicked();
+        }
+    }
+
+    public void GetClicked()
+    {
+        if (GameManager.Instance.CurrentState == GameState.PlaceShips)
+        {
+            Debug.Log("Placed ship");
+            PlaceShip();
+        }
+        else if (GameManager.Instance.CurrentState == GameState.ShootShips && !GameManager.Instance.IsAITurn)
+        {
+            Debug.Log("Shot ship");
+            ShootShip();
+        }
+        else if (GameManager.Instance.CurrentState == GameState.ShootShips && GameManager.Instance.IsAITurn)
+        {
+            Debug.Log("Got Shot");
+            GetShot();
         }
     }
 
@@ -97,9 +119,7 @@ public class TileScript : MonoBehaviour
     // Shortcut method for changing tile color
     public void SetColor(Color newColor)
     {
-        Debug.Log("Entered SetColor function properly");
-        spriteRenderer.color = newColor;    ///////////////////////////THIS IS THE LINE THAT RUINS EVERYTHING
-        Debug.Log("Set color properly");
+        spriteRenderer.color = newColor;
     }
     // Handles ship placement on this tile
     void PlaceShip()
@@ -172,6 +192,50 @@ public class TileScript : MonoBehaviour
             SetColor(Color.gray);
             UITextHandler.Instance.SetText("Miss");
             StartAITurn(1.5f); // Give AI turn after delay
+        }
+    }
+
+    void GetShot()
+    {
+        if (id >= 0 && id < GameManager.Instance.playerTiles.Count) //Sanity check
+        {
+            if (!shot)  // Second sanity check
+            {
+                shot = true;
+                Debug.Log("Set tile to shot");
+
+                if (hasShip) // Successful hit
+                {
+                    UITextHandler.Instance.SetText("EnemyHit");
+                    SetColor(new Color(1, 0.9f, 0.2f));
+                    GameManager.Instance.playerShipsRemaining--;
+                    Debug.Log($"AI aimed at index {id} and HIT");
+
+                    if (GameManager.Instance.playerShipsRemaining <= 0) // If the game is over, set defeat
+                    {
+                        GameManager.Instance.SetGameState(GameState.Defeat);
+                    }
+                    else    // If game is not over, they take another turn
+                    {
+                        Invoke(nameof(RunAITurn), 2f); // Chain consecutive hits
+                    }
+                }
+                else    // Miss
+                {
+                    UITextHandler.Instance.SetText("EnemyMiss");
+                    GameManager.Instance.IsAITurn = false; // Turn ends when AI misses
+                    SetColor(new Color(0.2f, 0.9f, 1));
+                    Debug.Log($"AI aimed at index {id} and MISSED");
+                }
+            }
+            else
+            {
+                Debug.Log($"AI attempted to shoot a tile that was previously shot");
+            }
+        }
+        else
+        {
+            Debug.Log($"AI attempted an invalid shot");
         }
     }
 
