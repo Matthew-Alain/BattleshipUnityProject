@@ -8,13 +8,9 @@ public class TileScript : MonoBehaviour
 {
     private Camera mainCamera;
     private SpriteRenderer spriteRenderer;
-    [HideInInspector] public Color originalColor; // Stores the tile's default color
-
-    [SerializeField]
+    public Color originalColor; // Stores the tile's default color
     public bool hasShip = false; // True if this tile contains a ship
     public bool shot = false;    // True if this tile has been shot at
-    private static bool isAITurn = false; // Shared flag for all tiles during AI turns
-
     private string tileTag;      // Stores whether this is "PlayerSpaces" or "EnemySpaces"
     private bool showingEnemyShips = false; // Tracks enemy ship visibility state
 
@@ -35,10 +31,6 @@ public class TileScript : MonoBehaviour
 
     void Update()
     {
-        // Skip input processing during AI turns
-        if (isAITurn) return;
-        if (GameManager.Instance.IsAITurn) return;
-
         // Toggle enemy ship visibility when LeftShift is held
         if (Keyboard.current.leftShiftKey.isPressed)
         {
@@ -53,6 +45,9 @@ public class TileScript : MonoBehaviour
             ToggleEnemyShips(false);
             showingEnemyShips = false;
         }
+
+        // Skip input processing during AI turns
+        if (GameManager.Instance.IsAITurn) return;
 
         // Handle mouse input
         if (Mouse.current?.leftButton.wasPressedThisFrame ?? false)
@@ -79,9 +74,10 @@ public class TileScript : MonoBehaviour
         {
             if (GameManager.Instance.CurrentState == GameState.PlaceShips)
             {
+                Debug.Log("Placed ship");
                 PlaceShip();
             }
-            else if (GameManager.Instance.CurrentState == GameState.ShootShips && !isAITurn)
+            else if (GameManager.Instance.CurrentState == GameState.ShootShips && !GameManager.Instance.IsAITurn)
             {
                 ShootShip();
             }
@@ -99,8 +95,12 @@ public class TileScript : MonoBehaviour
     }
 
     // Shortcut method for changing tile color
-    public void SetColor(Color newColor) => spriteRenderer.color = newColor;
-
+    public void SetColor(Color newColor)
+    {
+        Debug.Log("Entered SetColor function properly");
+        spriteRenderer.color = newColor;    ///////////////////////////THIS IS THE LINE THAT RUINS EVERYTHING
+        Debug.Log("Set color properly");
+    }
     // Handles ship placement on this tile
     void PlaceShip()
     {
@@ -118,23 +118,18 @@ public class TileScript : MonoBehaviour
             return;
         }
 
-        // Check ship limit
-        if (GameManager.Instance.totalPlayerShipsPlaced >= GameManager.MAX_SHIPS)
-        {
-            UITextHandler.Instance.SetText("All ships placed!");
-            return;
-        }
-
         // Place the ship and update game state
         hasShip = true;
         SetColor(Color.green);
-        GameManager.Instance.totalPlayerShipsPlaced++;
+        GameManager.playerShipsPlaced++;
         UITextHandler.Instance.SetText("PlacedShip");
 
         // Transition to shooting phase when all ships placed
-        if (GameManager.Instance.totalPlayerShipsPlaced >= GameManager.MAX_SHIPS)
+        if (GameManager.playerShipsPlaced >= GameManager.MAX_SHIPS)
         {
+            UITextHandler.Instance.SetText("All ships placed!");
             GameManager.Instance.SetGameState(GameState.ShootShips);
+            return;
         }
     }
 
@@ -142,7 +137,7 @@ public class TileScript : MonoBehaviour
     void ShootShip()
     {
         // Validate game state
-        if (isAITurn || GameManager.Instance.CurrentState != GameState.ShootShips) return;
+        if (GameManager.Instance.IsAITurn || GameManager.Instance.CurrentState != GameState.ShootShips) return;
 
         // Prevent shooting own ships
         if (tileTag != "EnemySpaces")
@@ -183,7 +178,7 @@ public class TileScript : MonoBehaviour
     // Starts AI turn after specified delay
     void StartAITurn(float delay = 1.5f)
     {
-        isAITurn = true;
+        GameManager.Instance.IsAITurn = true;
         Invoke(nameof(RunAITurn), delay);
     }
 
@@ -191,7 +186,6 @@ public class TileScript : MonoBehaviour
     void RunAITurn()
     {
         GameManager.Instance.ai.TakeTurn();
-        isAITurn = false;
         
         // If AI hit a ship, this will be handled in SimpleBattleshipAI.cs
     }

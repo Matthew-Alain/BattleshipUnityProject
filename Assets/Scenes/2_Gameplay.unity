@@ -182,7 +182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: hasShip
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -361,6 +361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spacePrefab: {fileID: 5855414458777580869, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+  mainCamera: {fileID: 0}
 --- !u!4 &179738086
 Transform:
   m_ObjectHideFlags: 0
@@ -1016,7 +1017,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5.626374
+  orthographic size: 5.6229324
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1588,7 +1589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: hasShip
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1668,7 +1669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: hasShip
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2124,7 +2125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: hasShip
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2297,11 +2298,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed78a7489058e09458833561da3ed533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ai: {fileID: 0}
-  totalPlayerShipsPlaced: 0
   playerShipsRemaining: 5
   enemyShipsRemaining: 5
-  aiHasTakenFirstTurn: 0
+  ai: {fileID: 0}
   aiInitialDelay: 2
 --- !u!4 &1206847977
 Transform:
@@ -2386,7 +2385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: hasShip
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

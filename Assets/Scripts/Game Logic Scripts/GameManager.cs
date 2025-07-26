@@ -9,9 +9,13 @@ public class GameManager : MonoBehaviour
 
     // Current game state (menu, placement, shooting, etc.)
     public GameState CurrentState { get; private set; }
-    public static int maxShips = 5;
-    public static int shipsPlaced = 0;
-    public static int enemyShips = maxShips;
+
+    // Ship tracking
+    public const int MAX_SHIPS = 5;
+    public const int GRID_SIZE = 5;
+    public static int playerShipsPlaced = 0;
+    public int playerShipsRemaining = MAX_SHIPS;
+    public int enemyShipsRemaining = MAX_SHIPS;
 
     // For map coords
     public double SelectedLatitude { get; set; }
@@ -19,21 +23,9 @@ public class GameManager : MonoBehaviour
     public bool LocationSelected => SelectedLatitude != 0 || SelectedLongitude != 0;
     public Texture2D MapScreenshot { get; set; }
 
-
-
-
     // Reference to the AI component
     public SimpleBattleshipAI ai;
     public bool IsAITurn { get; set; }
-
-    // Player ship tracking
-    public int totalPlayerShipsPlaced = 0;
-    public const int MAX_SHIPS = 5; // Total ships per player
-    public int playerShipsRemaining = MAX_SHIPS;
-    public int enemyShipsRemaining = MAX_SHIPS;
-
-    // AI turn timing control
-    public bool aiHasTakenFirstTurn = false;
     public float aiInitialDelay = 2f; // Delay before AI's first turn
 
     void Awake()
@@ -53,7 +45,6 @@ public class GameManager : MonoBehaviour
     {
         // Only initialize AI, ships will be placed when game starts
         ai = gameObject.AddComponent<SimpleBattleshipAI>();
-        ai.gridSize = 5;
         ai.ResetGuesses();
     }
 
@@ -98,40 +89,47 @@ public class GameManager : MonoBehaviour
 
     // Processes a shot at the given coordinates on player's grid
     // Returns true if hit, false if miss
-    public bool GetShot(Vector2Int pos)
+    public bool ProcessShot(Vector2Int pos)
     {
         // Get all player tiles by tag
         TileScript[] playerTiles = GameObject.FindGameObjectsWithTag("PlayerSpaces")
                                .Select(go => go.GetComponent<TileScript>())
                                .ToArray();
+        Debug.Log("Retrieved all player tiles");
 
         // Convert grid coordinates to tile index (0-24)
         int tileIndex = pos.y * 5 + pos.x;
+        Debug.Log("Converted grid to index");
 
         if (tileIndex >= 0 && tileIndex < playerTiles.Length)
         {
             TileScript tile = playerTiles[tileIndex];
+            Debug.Log("Got tile from playerTiles array");
             if (!tile.shot)
             {
                 tile.shot = true;
+                Debug.Log("Set tile to shot");
                 if (tile.hasShip) // Successful hit
                 {
+                    Debug.Log("Checked tile has ship");
                     tile.SetColor(Color.red);
+                    Debug.Log("Set tile color to red");
                     playerShipsRemaining--;
                     Debug.Log($"AI hit at tile {tileIndex + 1}");
+                    return true;
 
                     // Immediate defeat check
-                    if (playerShipsRemaining <= 0)
-                    {
-                        SetGameState(GameState.Defeat);
-                    }
-                    return true;
+                    //if (playerShipsRemaining <= 0)
+                    //{
+                    //    SetGameState(GameState.Defeat);
+                    //}
                 }
                 // Miss
                 tile.SetColor(Color.gray);
                 return false;
             }
         }
+        Debug.Log($"AI attempted an invalid shot");
         return false; // Invalid shot
     }
 
@@ -154,22 +152,25 @@ public class GameManager : MonoBehaviour
     // Resets all game data for a new round
     void ResetGame()
     {
-        // Reset ship counts
-        totalPlayerShipsPlaced = 0;
-        playerShipsRemaining = MAX_SHIPS;
-        enemyShipsRemaining = MAX_SHIPS;
-
-        // Reset AI state
-        aiHasTakenFirstTurn = false;
-        ai.ResetGuesses();
-        PlaceAIShips(); // Place new enemy ships
 
         // Reset all tiles in the game
         TileScript[] allTiles = FindObjectsByType<TileScript>(FindObjectsSortMode.None);
         foreach (TileScript tile in allTiles)
         {
             tile.shot = false;
+            tile.hasShip = false;
             tile.SetColor(tile.originalColor);
         }
+
+        // Reset ship counts
+        playerShipsRemaining = MAX_SHIPS;
+        enemyShipsRemaining = MAX_SHIPS;
+        playerShipsPlaced = 0;
+
+        // Reset AI state
+        ai.ResetGuesses();
+        PlaceAIShips(); // Place new enemy ships
+        IsAITurn = false;
+
     }
 }

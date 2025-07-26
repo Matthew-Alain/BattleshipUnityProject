@@ -50,13 +50,13 @@ public class UITextHandler : MonoBehaviour
             switch (currentTemporaryMessage)
             {
                 case "PlacedShip":
-                    tmp.text = $"Ship placed! ({GameManager.Instance.totalPlayerShipsPlaced}/{GameManager.MAX_SHIPS})";
+                    tmp.text = $"Ship placed! ({GameManager.playerShipsPlaced}/{GameManager.MAX_SHIPS})";
                     break;
                 case "PlaceWrongSide":
-                    tmp.text = $"Place on your side only! ({GameManager.Instance.totalPlayerShipsPlaced}/{GameManager.MAX_SHIPS})";
+                    tmp.text = $"Place on your side only! ({GameManager.playerShipsPlaced}/{GameManager.MAX_SHIPS})";
                     break;
                 case "PlaceSameSpace":
-                    tmp.text = $"Space occupied! ({GameManager.Instance.totalPlayerShipsPlaced}/{GameManager.MAX_SHIPS})";
+                    tmp.text = $"Space occupied! ({GameManager.playerShipsPlaced}/{GameManager.MAX_SHIPS})";
                     break;
                 case "ShootWrongSide":
                     tmp.text = "Aim for enemy waters!";
@@ -93,16 +93,18 @@ public class UITextHandler : MonoBehaviour
                 tmp.text = "Welcome! Click 'Start Game' to begin!";
                 break;
             case GameState.PlaceShips:
-                tmp.text = $"Place your ships ({GameManager.Instance.totalPlayerShipsPlaced}/{GameManager.MAX_SHIPS})";
+                tmp.text = $"Place your ships ({GameManager.playerShipsPlaced}/{GameManager.MAX_SHIPS})";
                 break;
             case GameState.ShootShips:
                 tmp.text = "Attack enemy waters!";
                 break;
             case GameState.Victory:
                 tmp.text = "Victory! All enemy ships sunk!";
+                UIButtonHandler.Instance.ToggleButton();
                 break;
             case GameState.Defeat:
                 tmp.text = "Defeat! Your fleet was destroyed!";
+                UIButtonHandler.Instance.ToggleButton();
                 break;
         }
     }
