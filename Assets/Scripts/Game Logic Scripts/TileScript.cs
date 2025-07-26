@@ -13,6 +13,8 @@ public class TileScript : MonoBehaviour
     public bool shot = false;    // True if this tile has been shot at
     private string tileTag;      // Stores whether this is "PlayerSpaces" or "EnemySpaces"
     private bool showingEnemyShips = false; // Tracks enemy ship visibility state
+    public GameObject missSplashEffect; // Stores the Miss Spalsh Effect prefab
+    public GameObject hitSplashEffect; // Stores the Miss Spalsh Effect prefab
     public int id;
 
     void Start()
@@ -180,6 +182,11 @@ public class TileScript : MonoBehaviour
             SetColor(Color.red);
             GameManager.Instance.enemyShipsRemaining--;
             UITextHandler.Instance.SetText("Hit"); 
+
+            if (hitSplashEffect != null)
+            {
+                Instantiate(hitSplashEffect, transform.position, Quaternion.identity); // Spawn hit effect on miss
+            }
             
             // Check for victory
             if (GameManager.Instance.enemyShipsRemaining <= 0)
@@ -191,6 +198,12 @@ public class TileScript : MonoBehaviour
         {
             SetColor(Color.gray);
             UITextHandler.Instance.SetText("Miss");
+
+                if (missSplashEffect != null)
+                {
+                    Instantiate(missSplashEffect, transform.position, Quaternion.identity); // Spawn splash effect on miss
+                }
+
             StartAITurn(1.5f); // Give AI turn after delay
         }
     }
@@ -209,6 +222,12 @@ public class TileScript : MonoBehaviour
                     UITextHandler.Instance.SetText("EnemyHit");
                     SetColor(new Color(1, 0.9f, 0.2f));
                     GameManager.Instance.playerShipsRemaining--;
+
+                    if (hitSplashEffect != null)
+                    {
+                        Instantiate(hitSplashEffect, transform.position, Quaternion.identity); // Spawn hit effect on miss
+                    }
+
                     Debug.Log($"AI aimed at index {id} and HIT");
 
                     if (GameManager.Instance.playerShipsRemaining <= 0) // If the game is over, set defeat
@@ -225,6 +244,12 @@ public class TileScript : MonoBehaviour
                     UITextHandler.Instance.SetText("EnemyMiss");
                     GameManager.Instance.IsAITurn = false; // Turn ends when AI misses
                     SetColor(new Color(0.2f, 0.9f, 1));
+
+                    if (missSplashEffect != null)
+                    {
+                        Instantiate(missSplashEffect, transform.position, Quaternion.identity); // Spawn splash effect on miss
+                    }
+
                     Debug.Log($"AI aimed at index {id} and MISSED");
                 }
             }

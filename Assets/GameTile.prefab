@@ -147,4 +147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1bbcaadd9a4a54bb243e47a4c2c62b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickedColor: {r: 1, g: 0, b: 0, a: 1}
+  originalColor: {r: 0, g: 0, b: 0, a: 0}
+  hasShip: 0
+  shot: 0
+  missSplashEffect: {fileID: 1614084111613101768, guid: 366076d227b0c224da38e8e43c5382e4, type: 3}
+  hitSplashEffect: {fileID: 1614084111613101768, guid: 4d193308f1ed5f9438e932982fa5eaea, type: 3}
+  id: 0
