@@ -93,7 +93,7 @@ public class UITextHandler : MonoBehaviour
                 tmp.text = "Welcome! Click 'Start Game' to begin!";
                 break;
             case GameState.PlaceShips:
-                tmp.text = $"Place your ships ({GameManager.playerShipsPlaced}/{GameManager.MAX_SHIPS})";
+                tmp.text = $"Place your ships on the left grid ({GameManager.playerShipsPlaced}/{GameManager.MAX_SHIPS})";
                 break;
             case GameState.ShootShips:
                 tmp.text = "Attack enemy waters!";
