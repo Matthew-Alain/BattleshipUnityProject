@@ -9,6 +9,7 @@ public class TileScript : MonoBehaviour
     private Camera mainCamera;
     private SpriteRenderer spriteRenderer;
     public Color originalColor; // Stores the tile's default color
+    public Color enemyTint = new Color(1f, 0.5f, 0.5f, 1f); // Stores color for enemy ship tint
     public bool hasShip = false; // True if this tile contains a ship
     public bool shot = false;    // True if this tile has been shot at
     private string tileTag;      // Stores whether this is "PlayerSpaces" or "EnemySpaces"
@@ -113,13 +114,32 @@ public class TileScript : MonoBehaviour
         }
     }
 
-    // Shows/hides enemy ships (magenta color) when called
+    // Shows/hides enemy ships (Ship Sprite) when called
     public void ToggleEnemyShips(bool show)
     {
         // Only affects unshot enemy tiles
         if (tileTag == "EnemySpaces" && !shot)
         {
-            SetColor(show && hasShip ? Color.magenta : originalColor);
+            if (show && hasShip && placedShipPiece == null)
+            {
+                // Show actual ship sprite
+                Vector3 spawnPos = transform.position;
+                spawnPos.z = -1f;
+                placedShipPiece = Instantiate(shipPiecePrefab, spawnPos, Quaternion.Euler(0, 0, 180), transform);
+
+                // Apply tint to enemy ship sprite
+                SpriteRenderer sr = placedShipPiece.GetComponent<SpriteRenderer>();
+                if (sr != null)
+                {
+                    sr.color = enemyTint;
+                }
+            }
+            else if (!show && placedShipPiece != null)
+            {
+                // Hide the ship sprite again
+                Destroy(placedShipPiece);
+                placedShipPiece = null;
+            }
         }
     }
 
@@ -128,6 +148,26 @@ public class TileScript : MonoBehaviour
     {
         spriteRenderer.color = newColor;
     }
+    
+    public void ResetSprite()
+    {
+        spriteRenderer.enabled = true; // Make sure tile is visible again
+
+        // Destroy ship piece if it exists
+        if (placedShipPiece != null)
+        {
+            Destroy(placedShipPiece);
+            placedShipPiece = null;
+        }
+
+        // Destroy hit ship piece if it exists
+        if (placedHitShipPiece != null)
+        {
+            Destroy(placedHitShipPiece);
+            placedHitShipPiece = null;
+        }
+    }
+
     // Handles ship placement on this tile
     void PlaceShip()
     {
@@ -147,7 +187,6 @@ public class TileScript : MonoBehaviour
 
         // Place the ship and update game state
         hasShip = true;
-        SetColor(Color.green);
         GameManager.playerShipsPlaced++;
         UITextHandler.Instance.SetText("PlacedShip");
 
@@ -192,7 +231,6 @@ public class TileScript : MonoBehaviour
 
         if (hasShip) // Successful hit
         {
-            SetColor(Color.red);
             GameManager.Instance.enemyShipsRemaining--;
             UITextHandler.Instance.SetText("Hit"); 
 
@@ -201,7 +239,7 @@ public class TileScript : MonoBehaviour
             {
                 Vector3 spawnPos = transform.position;
                 spawnPos.z = -1f; // Ensure it's above the tile
-                placedHitShipPiece = Instantiate(hitShipPiecePrefab, spawnPos, Quaternion.identity, transform);
+                placedHitShipPiece = Instantiate(hitShipPiecePrefab, spawnPos, Quaternion.Euler(0, 0, 180), transform);
             }
 
             if (hitSplashEffect != null)
@@ -217,7 +255,7 @@ public class TileScript : MonoBehaviour
         }
         else // Miss
         {
-            SetColor(Color.gray);
+            spriteRenderer.enabled = false;
             UITextHandler.Instance.SetText("Miss");
 
                 if (missSplashEffect != null)
@@ -241,7 +279,6 @@ public class TileScript : MonoBehaviour
                 if (hasShip) // Successful hit
                 {
                     UITextHandler.Instance.SetText("EnemyHit");
-                    SetColor(new Color(1, 0.9f, 0.2f));
                     GameManager.Instance.playerShipsRemaining--;
 
                     if (hitSplashEffect != null)
@@ -279,7 +316,7 @@ public class TileScript : MonoBehaviour
                 {
                     UITextHandler.Instance.SetText("EnemyMiss");
                     GameManager.Instance.IsAITurn = false; // Turn ends when AI misses
-                    SetColor(new Color(0.2f, 0.9f, 1));
+                    spriteRenderer.enabled = false;
 
                     if (missSplashEffect != null)
                     {
