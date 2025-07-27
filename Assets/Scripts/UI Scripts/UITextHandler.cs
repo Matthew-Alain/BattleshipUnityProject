@@ -89,7 +89,7 @@ public class UITextHandler : MonoBehaviour
     {
         switch (GameManager.Instance.CurrentState)
         {
-            case GameState.MainMenu:
+            case GameState.StartGame:
                 tmp.text = "Welcome! Click 'Start Game' to begin!";
                 break;
             case GameState.PlaceShips:

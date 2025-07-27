@@ -1,6 +1,6 @@
 public enum GameState
 {
-    MainMenu,
+    StartGame,
     PlaceShips,
     ShootShips,
     Victory,

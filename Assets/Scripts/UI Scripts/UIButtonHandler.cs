@@ -10,7 +10,7 @@ public class UIButtonHandler : MonoBehaviour
     }
     public void OnButtonClick()
     {
-        if (GameManager.Instance.CurrentState == GameState.MainMenu)
+        if (GameManager.Instance.CurrentState == GameState.StartGame)
         {
             // Start game button
             GameManager.Instance.SetGameState(GameState.PlaceShips);
