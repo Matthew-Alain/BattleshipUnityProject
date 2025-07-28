@@ -143,12 +143,6 @@ public class TileScript : MonoBehaviour
         }
     }
 
-    // Shortcut method for changing tile color
-    public void SetColor(Color newColor)
-    {
-        spriteRenderer.color = newColor;
-    }
-    
     public void ResetSprite()
     {
         spriteRenderer.enabled = true; // Make sure tile is visible again
@@ -232,7 +226,7 @@ public class TileScript : MonoBehaviour
         if (hasShip) // Successful hit
         {
             GameManager.Instance.enemyShipsRemaining--;
-            UITextHandler.Instance.SetText("Hit"); 
+            UITextHandler.Instance.SetText("Hit");
 
             // Only show sprite for ship when hit
             if (tileTag == "EnemySpaces" && hitShipPiecePrefab != null && placedHitShipPiece == null)
@@ -246,7 +240,7 @@ public class TileScript : MonoBehaviour
             {
                 Instantiate(hitSplashEffect, transform.position, Quaternion.identity); // Spawn hit effect on miss
             }
-            
+
             // Check for victory
             if (GameManager.Instance.enemyShipsRemaining <= 0)
             {
@@ -258,10 +252,10 @@ public class TileScript : MonoBehaviour
             spriteRenderer.enabled = false;
             UITextHandler.Instance.SetText("Miss");
 
-                if (missSplashEffect != null)
-                {
-                    Instantiate(missSplashEffect, transform.position, Quaternion.identity); // Spawn splash effect on miss
-                }
+            if (missSplashEffect != null)
+            {
+                Instantiate(missSplashEffect, transform.position, Quaternion.identity); // Spawn splash effect on miss
+            }
 
             StartAITurn(1.5f); // Give AI turn after delay
         }
@@ -348,7 +342,7 @@ public class TileScript : MonoBehaviour
     void RunAITurn()
     {
         GameManager.Instance.ai.TakeTurn();
-        
+
         // If AI hit a ship, this will be handled in SimpleBattleshipAI.cs
     }
 }

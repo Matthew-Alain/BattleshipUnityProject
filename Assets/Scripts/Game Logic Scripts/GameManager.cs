@@ -115,14 +115,12 @@ public class GameManager : MonoBehaviour
         {
             tile.shot = false;
             tile.hasShip = false;
-            tile.SetColor(tile.originalColor);
             tile.ResetSprite();
         }
         foreach (TileScript tile in enemyTiles)
         {
             tile.shot = false;
             tile.hasShip = false;
-            tile.SetColor(tile.originalColor);
             tile.ResetSprite();
         }
 
