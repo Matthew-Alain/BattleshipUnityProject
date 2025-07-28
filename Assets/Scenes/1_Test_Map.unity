@@ -1449,8 +1449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be45322d14f981f4f8d845d7ec2e09d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  referenceWidth: 1920
-  referenceHeight: 1080
+  sceneWidth: 20
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -3,13 +3,35 @@ using UnityEngine;
 // Attach this to your Camera
 public class CameraScaler : MonoBehaviour
 {
-    public float targetAspect = 16f / 9f; // Your design aspect ratio
-    public float orthographicSize = 5f;   // Default camera size at target aspect
+
+    private float sceneWidth;
+    Camera _camera;
 
     void Start()
     {
-        float windowAspect = (float)Screen.width / (float)Screen.height;
-        float scale = windowAspect / targetAspect;
-        Camera.main.orthographicSize = orthographicSize / scale;
+        _camera = Camera.main;
+    }
+
+    void Update()
+    {
+        if (Application.isMobilePlatform)
+        {
+            if (Screen.orientation == ScreenOrientation.LandscapeLeft || Screen.orientation == ScreenOrientation.LandscapeRight)
+            {
+                sceneWidth = 7f;
+            }
+            else
+            {
+                sceneWidth = 20f;
+            }
+        }
+        else
+        {
+            sceneWidth = 5f;
+        }
+        //float unitsPerPixel = sceneWidth / Screen.width;
+        //float desiredHalfHeight = 0.25f * unitsPerPixel * Screen.height;
+        _camera.orthographicSize = sceneWidth;
     }
 }
+
