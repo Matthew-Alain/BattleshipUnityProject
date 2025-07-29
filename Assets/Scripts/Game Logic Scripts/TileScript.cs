@@ -16,12 +16,22 @@ public class TileScript : MonoBehaviour
     private bool showingEnemyShips = false; // Tracks enemy ship visibility state
     public int id;
 
-    public GameObject missSplashEffect; // Stores the Miss Spalsh Effect prefab
-    public GameObject hitSplashEffect; // Stores the Miss Spalsh Effect prefab
+    // Visual effects
+    public GameObject missSplashEffect; // Stores the Miss Splash Effect prefab
+    public GameObject hitSplashEffect; // Stores the Hit Splash Effect prefab
     public GameObject shipPiecePrefab; // For normal ship piece
     public GameObject hitShipPiecePrefab; // For hit ship piece
     private GameObject placedShipPiece; // Instance of ship piece shown on tile
     private GameObject placedHitShipPiece; // Instance of hit ship piece shown on tile
+
+    // Sound effects
+    [Header("Sound Effects")]
+    [SerializeField] private AudioClip placeShipSound;
+    [SerializeField] private AudioClip hitSound;
+    [SerializeField] private AudioClip missSound;
+    [Range(0, 1)] public float placeShipVolume = 0.2f;
+    [Range(0, 1)] public float hitVolume = 0.7f;
+    [Range(0, 1)] public float missVolume = 0.15f;
 
     void Start()
     {
@@ -46,6 +56,15 @@ public class TileScript : MonoBehaviour
 
         // Ensure collider fits the tile perfectly
         GetComponent<BoxCollider2D>().size = Vector2.one;
+    }
+
+    // Play sound with optional volume override
+    private void PlaySound(AudioClip clip, float volume)
+    {
+        if (clip != null)
+        {
+            AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, volume);
+        }
     }
 
     void Update()
@@ -143,6 +162,9 @@ public class TileScript : MonoBehaviour
         }
     }
 
+    // Shortcut method for changing tile color
+    public void SetColor(Color newColor) => spriteRenderer.color = newColor;
+
     public void ResetSprite()
     {
         spriteRenderer.enabled = true; // Make sure tile is visible again
@@ -183,6 +205,9 @@ public class TileScript : MonoBehaviour
         hasShip = true;
         GameManager.playerShipsPlaced++;
         UITextHandler.Instance.SetText("PlacedShip");
+
+        // Play ship placement sound
+        PlaySound(placeShipSound, placeShipVolume);
 
         // Place ship sprite on tile
         if (shipPiecePrefab != null && placedShipPiece == null)
@@ -227,6 +252,7 @@ public class TileScript : MonoBehaviour
         {
             GameManager.Instance.enemyShipsRemaining--;
             UITextHandler.Instance.SetText("Hit");
+            PlaySound(hitSound, hitVolume); // Play hit sound
 
             // Only show sprite for ship when hit
             if (tileTag == "EnemySpaces" && hitShipPiecePrefab != null && placedHitShipPiece == null)
@@ -238,7 +264,7 @@ public class TileScript : MonoBehaviour
 
             if (hitSplashEffect != null)
             {
-                Instantiate(hitSplashEffect, transform.position, Quaternion.identity); // Spawn hit effect on miss
+                Instantiate(hitSplashEffect, transform.position, Quaternion.identity); // Spawn hit effect
             }
 
             // Check for victory
@@ -251,10 +277,11 @@ public class TileScript : MonoBehaviour
         {
             spriteRenderer.enabled = false;
             UITextHandler.Instance.SetText("Miss");
+            PlaySound(missSound, missVolume); // Play miss sound
 
             if (missSplashEffect != null)
             {
-                Instantiate(missSplashEffect, transform.position, Quaternion.identity); // Spawn splash effect on miss
+                Instantiate(missSplashEffect, transform.position, Quaternion.identity); // Spawn splash effect
             }
 
             StartAITurn(1.5f); // Give AI turn after delay
@@ -274,10 +301,11 @@ public class TileScript : MonoBehaviour
                 {
                     UITextHandler.Instance.SetText("EnemyHit");
                     GameManager.Instance.playerShipsRemaining--;
+                    PlaySound(hitSound, hitVolume); // Play hit sound
 
                     if (hitSplashEffect != null)
                     {
-                        Instantiate(hitSplashEffect, transform.position, Quaternion.identity); // Spawn hit effect on miss
+                        Instantiate(hitSplashEffect, transform.position, Quaternion.identity); // Spawn hit effect
                     }
 
                     // Only show sprite for ship when hit
@@ -311,10 +339,11 @@ public class TileScript : MonoBehaviour
                     UITextHandler.Instance.SetText("EnemyMiss");
                     GameManager.Instance.IsAITurn = false; // Turn ends when AI misses
                     spriteRenderer.enabled = false;
+                    PlaySound(missSound, missVolume); // Play miss sound
 
                     if (missSplashEffect != null)
                     {
-                        Instantiate(missSplashEffect, transform.position, Quaternion.identity); // Spawn splash effect on miss
+                        Instantiate(missSplashEffect, transform.position, Quaternion.identity); // Spawn splash effect
                     }
 
                     Debug.Log($"AI aimed at index {id} and MISSED");
@@ -342,7 +371,5 @@ public class TileScript : MonoBehaviour
     void RunAITurn()
     {
         GameManager.Instance.ai.TakeTurn();
-
-        // If AI hit a ship, this will be handled in SimpleBattleshipAI.cs
     }
 }

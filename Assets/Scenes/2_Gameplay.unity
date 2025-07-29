@@ -184,6 +184,30 @@ PrefabInstance:
       propertyPath: hasShip
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -250,6 +274,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -315,6 +363,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -436,6 +508,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -502,6 +598,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -562,6 +682,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -629,6 +773,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -690,6 +858,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -750,6 +942,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -930,6 +1146,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -995,6 +1235,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1242,6 +1506,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1302,6 +1590,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1448,6 +1760,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1580,6 +1916,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1640,6 +2000,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1705,6 +2089,30 @@ PrefabInstance:
     - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: hasShip
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1786,6 +2194,30 @@ PrefabInstance:
       propertyPath: hasShip
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1857,11 +2289,168 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+--- !u!1 &935674663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 935674664}
+  - component: {fileID: 935674665}
+  m_Layer: 5
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &935674664
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935674663}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1766643415}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &935674665
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935674663}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: b92499814cee5664591c085460135e35, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &946360685 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
@@ -1928,6 +2517,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1989,6 +2602,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2049,6 +2686,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2116,6 +2777,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2176,6 +2861,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2242,6 +2951,30 @@ PrefabInstance:
       propertyPath: hasShip
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2307,6 +3040,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2378,6 +3135,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2508,11 +3289,85 @@ PrefabInstance:
       propertyPath: hasShip
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+--- !u!1 &1241193070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1241193072}
+  - component: {fileID: 1241193071}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1241193071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241193070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78cbf7ecbe05bdc41b083dab30a251f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundMusic: {fileID: 8300000, guid: 2823fcf4294b20f4aa0f602f179908aa, type: 3}
+  victoryMusic: {fileID: 8300000, guid: 6d74f846243941c4d97f062da7a6ccbe, type: 3}
+  defeatMusic: {fileID: 8300000, guid: 444d4446d9de3bc4bbb1f33f3fb573b1, type: 3}
+  bgmSource: {fileID: 0}
+  sfxSource: {fileID: 0}
+  musicVolume: 0.5
+--- !u!4 &1241193072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241193070}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1184.0558, y: 467.0468, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1282089756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2568,6 +3423,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2629,6 +3508,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2711,6 +3614,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2772,6 +3699,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2832,6 +3783,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2899,6 +3874,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2960,6 +3959,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3020,6 +4043,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3091,6 +4138,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3198,6 +4269,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3268,6 +4363,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3493,6 +4612,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3558,6 +4701,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3660,6 +4827,7 @@ RectTransform:
   m_Children:
   - {fileID: 355532050}
   - {fileID: 2000104509}
+  - {fileID: 935674664}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3722,6 +4890,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3943,6 +5135,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4003,6 +5219,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4070,6 +5310,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4130,6 +5394,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4271,6 +5559,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4363,6 +5675,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2000104513}
         m_TargetAssemblyTypeName: UIButtonHandler, Assembly-CSharp
         m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 935674665}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4488,6 +5812,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4549,6 +5897,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4609,6 +5981,30 @@ PrefabInstance:
     - target: {fileID: 6588365144791222008, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73fa10f5ac5299d409a91f7091e840c1, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: hitVolume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3467033aab317f74283737f6f87e5831, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: missVolume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cd2330dcab30eab4898628ce319df67e, type: 3}
+    - target: {fileID: 8432661316604010804, guid: 9ca4f3595ebda7e4e9995410523625f5, type: 3}
+      propertyPath: placeShipVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4847,3 +6243,4 @@ SceneRoots:
   - {fileID: 179738086}
   - {fileID: 1648700794}
   - {fileID: 1706199360}
+  - {fileID: 1241193072}

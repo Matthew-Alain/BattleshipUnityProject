@@ -13,6 +13,9 @@ public class UITextHandler : MonoBehaviour
     // Current active temporary message
     private string currentTemporaryMessage = null;
 
+    // Tracks previous game state to prevent duplicate audio triggers
+    private GameState lastState = GameState.StartGame;
+
     // Set up singleton pattern when object awakens
     void Awake()
     {
@@ -23,6 +26,11 @@ public class UITextHandler : MonoBehaviour
     void Start()
     {
         tmp = GetComponent<TextMeshProUGUI>();
+        // Play initial background music
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayBackgroundMusic();
+        }
     }
 
     // Updates UI text based on the provided message key
@@ -87,24 +95,52 @@ public class UITextHandler : MonoBehaviour
     // Updates text based on current game state
     private void UpdateStateText()
     {
-        switch (GameManager.Instance.CurrentState)
+        if (GameManager.Instance == null) return;
+
+        var currentState = GameManager.Instance.CurrentState;
+
+        // Only update if state actually changed
+        if (currentState == lastState) return;
+        lastState = currentState;
+
+        switch (currentState)
         {
             case GameState.StartGame:
                 tmp.text = "Welcome! Click 'Start Game' to begin!";
+                if (AudioManager.Instance != null)
+                {
+                    AudioManager.Instance.PlayBackgroundMusic();
+                }
                 break;
             case GameState.PlaceShips:
                 tmp.text = $"Place your ships on the left grid ({GameManager.playerShipsPlaced}/{GameManager.MAX_SHIPS})";
+                if (AudioManager.Instance != null)
+                {
+                    AudioManager.Instance.PlayBackgroundMusic();
+                }
                 break;
             case GameState.ShootShips:
                 tmp.text = "Attack enemy waters!";
+                if (AudioManager.Instance != null)
+                {
+                    AudioManager.Instance.PlayBackgroundMusic();
+                }
                 break;
             case GameState.Victory:
                 tmp.text = "Victory! All enemy ships sunk!";
                 UIButtonHandler.Instance.ToggleButton();
+                if (AudioManager.Instance != null)
+                {
+                    AudioManager.Instance.PlayVictoryMusic();
+                }
                 break;
             case GameState.Defeat:
                 tmp.text = "Defeat! Your fleet was destroyed!";
                 UIButtonHandler.Instance.ToggleButton();
+                if (AudioManager.Instance != null)
+                {
+                    AudioManager.Instance.PlayDefeatMusic();
+                }
                 break;
         }
     }
