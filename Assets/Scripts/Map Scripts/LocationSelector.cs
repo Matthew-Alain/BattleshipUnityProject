@@ -10,7 +10,6 @@ public class LocationSelector : MonoBehaviour
 
     public GameObject confirmButtonUI;
 
-    // 🔹 Add this reference in the Inspector
     public GameObject reloadMapPanel;
 
     private void Awake()
@@ -41,7 +40,7 @@ public class LocationSelector : MonoBehaviour
 
     private IEnumerator CaptureMapScreenshotAndLoadScene()
     {
-        // 🔹 Disable the panel so it's hidden in the screenshot
+        // Disable the panel so it's hidden in the screenshot
         if (reloadMapPanel != null)
             reloadMapPanel.SetActive(false);
 
