@@ -18,7 +18,7 @@ public class CameraScaler : MonoBehaviour
         {
             if (Screen.orientation == ScreenOrientation.LandscapeLeft || Screen.orientation == ScreenOrientation.LandscapeRight)
             {
-                sceneWidth = 7f;
+                sceneWidth = 4.9f;
             }
             else
             {
