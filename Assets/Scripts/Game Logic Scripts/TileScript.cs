@@ -88,6 +88,7 @@ public class TileScript : MonoBehaviour
         if (GameManager.Instance.IsAITurn) return;
 
         // Handle mouse input
+        // Connects to the current mouse device. If it's null, or if the left mouse button wasn't pressed this frame, return false
         if (Mouse.current?.leftButton.wasPressedThisFrame ?? false)
         {
             HandleClick(Mouse.current.position.ReadValue());
@@ -107,7 +108,7 @@ public class TileScript : MonoBehaviour
         Vector2 worldPos = mainCamera.ScreenToWorldPoint(screenPos);
         RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);
 
-        // Check if this tile was clicked
+        // Check if there is a collision when the player clicks, and if that collision is with this specific tile
         if (hit.collider != null && hit.collider.gameObject == gameObject)
         {
             GetClicked();
