@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   originalColor: {r: 0, g: 0, b: 0, a: 0}
+  enemyTint: {r: 1, g: 0.5, b: 0.5, a: 1}
   hasShip: 0
   shot: 0
   id: 0
@@ -155,3 +156,9 @@ MonoBehaviour:
   hitSplashEffect: {fileID: 1614084111613101768, guid: 4d193308f1ed5f9438e932982fa5eaea, type: 3}
   shipPiecePrefab: {fileID: 5830646106359935639, guid: 0b32aad38d030af439d0b2d0c777e750, type: 3}
   hitShipPiecePrefab: {fileID: 5830646106359935639, guid: d87f0261d89c70343af50457c06f86c0, type: 3}
+  placeShipSound: {fileID: 0}
+  hitSound: {fileID: 0}
+  missSound: {fileID: 0}
+  placeShipVolume: 0.2
+  hitVolume: 0.7
+  missVolume: 0.15

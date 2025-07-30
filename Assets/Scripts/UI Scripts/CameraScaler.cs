@@ -1,11 +1,8 @@
 using UnityEngine;
 
-// Attach this to your Camera
 public class CameraScaler : MonoBehaviour
 {
-
-    private float sceneWidth;
-    Camera _camera;
+    private Camera _camera;
 
     void Start()
     {
@@ -14,24 +11,31 @@ public class CameraScaler : MonoBehaviour
 
     void Update()
     {
+        float aspectRatio = (float)Screen.width / Screen.height;
+
+        // Mobile Handling
         if (Application.isMobilePlatform)
         {
             if (Screen.orientation == ScreenOrientation.LandscapeLeft || Screen.orientation == ScreenOrientation.LandscapeRight)
             {
-                sceneWidth = 4.9f;
+                _camera.orthographicSize = 4.9f;
             }
             else
             {
-                sceneWidth = 20f;
+                _camera.orthographicSize = 21f;
             }
         }
+
+        // Check for 16:10 or narrower (taller) ratios
+        else if (aspectRatio <= 1.6f)
+        {
+            _camera.orthographicSize = 5.5f;
+        }
+        
+        // Default desktop
         else
         {
-            sceneWidth = 5f;
+            _camera.orthographicSize = 5.1f;
         }
-        //float unitsPerPixel = sceneWidth / Screen.width;
-        //float desiredHalfHeight = 0.25f * unitsPerPixel * Screen.height;
-        _camera.orthographicSize = sceneWidth;
     }
 }
-
